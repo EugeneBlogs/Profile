@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Профиль</title>
+</head>
+
+<body>
+    <div class="container" id="static">
+        <div class="row">
+            <div class="col-3">
+                <img id="photo" src="https://lms.synergy.ru/attached/base/2199286/20221201_155946.png"
+                    alt="Изображение профиля">
+            </div>
+            <div class="col-9">
+                <h1 id="name">Мыльников Евгений Алексеевич</h1>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Статус:</th>
+                            <td id="status">Студент</td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td id="email">mylnikov_evgeniy90@mail.ru</td>
+                        </tr>
+                        <tr>
+                            <th>Телефон:</th>
+                            <td id="phone">+7-(911)-494-01-06</td>
+                        </tr>
+                        <tr>
+                            <th>Дата рождения:</th>
+                            <td id="date">31.08.2008</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align: right;">
+                    <button class="btn btn-primary" onclick="Change()">Редактировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="edit">
+        <div class="row">
+            <div class="col-3">
+                <img id="edit_photo" src="https://lms.synergy.ru/attached/base/2199286/20221201_155946.png"
+                    alt="Изображение профиля">
+                <input type="file" class="form-control mt-3" id="file_input" onchange="ReadFile(this)">
+            </div>
+            <div class="col-9">
+                <input type="text" class="form-control" id="edit_name" />
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Статус:</th>
+                            <td><input type="text" class="form-control" id="edit_status" /></td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td><input type="text" class="form-control" id="edit_email" /></td>
+                        </tr>
+                        <tr>
+                            <th>Телефон:</th>
+                            <td><input type="text" class="form-control" id="edit_phone" /></td>
+                        </tr>
+                        <tr>
+                            <th>Дата рождения:</th>
+                            <td><input type="text" class="form-control" id="edit_date" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align: right;">
+                    <button class="btn btn-danger" onclick="Cancel()">Отменить изменения</button>
+                    <button class="btn btn-success" onclick="Save()">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
