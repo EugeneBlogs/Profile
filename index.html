@@ -89,7 +89,7 @@
                         <tr>
                             <th>Страна:</th>
                             <td>
-                                <select class="form-select" name="countries">
+                                <select class="form-select" id="edit_country" name="countries">
 	<option value="Австралия">Австралия</option>
 	<option value="Австрия">Австрия</option>
 	<option value="Азербайджан">Азербайджан</option>
@@ -364,6 +364,7 @@
              } else {
                 document.getElementById("edit_female").checked = true;
             }
+            document.getElementById("edit_country").value = document.getElementById("country").innerHTML;
         }
         function Save() {
             document.getElementById("static").style.display = "block";
