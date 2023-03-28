@@ -336,7 +336,7 @@
 						</tr>
 						<tr>
 							<th>Телефон:</th>
-							<td><input type="text" class="form-control" id="edit_phone" /></td>
+							<td><input type="text" class="form-control edit_phone" id="edit_phone" /></td>
 						</tr>
 						<tr>
 							<th>Дата рождения:</th>
@@ -351,7 +351,10 @@
 			</div>
 		</div>
 	</div>
+	<script src="jquery-2.2.4.min.js"></script>
+	<script src="jquery.maskedinput.min.js"></script>
 	<script>
+		$(".edit_phone").mask("+7(999)999-9999");
 		let path;
 		document.getElementById("edit_country").value = "";
 		function Change() {
