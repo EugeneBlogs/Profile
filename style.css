@@ -8,15 +8,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #ffff00, #ffff00, #ff0000, #0000ff, #7cfc00, #7cfc00);
-    background-size: 1200% 1200%;
-    animation: GradientAnimation 15s ease infinite;
-}
-
-@keyframes GradientAnimation {
-    0%{background-position:70% 0%}
-    50%{background-position:31% 100%}
-    100%{background-position:70% 0%}
+    background-color: #f3f2ef;
 }
 
 .container {
